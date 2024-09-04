@@ -24,4 +24,17 @@ public class Parcel {
     public void setWeight(double weight) { this.weight = weight; }
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
+
+    @Override
+    public String toString() {
+        return "Parcel ID: " + parcelId + "\n" +
+                "Sender Name: " + senderName + "\n" +
+                "Sender Address: " + senderAddress + "\n" +
+                "Recipient Name: " + recipientName + "\n" +
+                "Recipient Address: " + recipientAddress + "\n" +
+                "Weight: " + weight + "\n" +
+                "Status: " + status + "\n" +
+                "-----------------------------";
+    }
+
 }

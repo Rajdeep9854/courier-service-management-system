@@ -1,6 +1,7 @@
 package com.courier.dao;
 
 import com.courier.model.Customer;
+import com.courier.model.Parcel;
 import com.courier.util.DBConnection;
 
 import java.sql.*;
@@ -41,6 +42,9 @@ public class CustomerDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+//        for (Customer customer : customers) {
+//            System.out.println(customer);
+//        }
         return customers;
     }
 

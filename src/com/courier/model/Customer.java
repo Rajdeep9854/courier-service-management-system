@@ -15,4 +15,15 @@ public class Customer {
     public void setEmail(String email) { this.email = email; }
     public String getPhoneNumber() { return phoneNumber; }
     public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
+
+
+    @Override
+    public String toString() {
+        return "Customer ID: " + customerId + "\n" +
+                "Customer Name: " + customerName + "\n" +
+                "Email: " + email + "\n" +
+                "Phone Number: " + phoneNumber + "\n" +
+                "-----------------------------";
+    }
+
 }

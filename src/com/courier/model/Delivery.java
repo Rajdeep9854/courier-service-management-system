@@ -23,4 +23,16 @@ public class Delivery {
     public void setDeliveryStatus(String deliveryStatus) { this.deliveryStatus = deliveryStatus; }
     public double getDeliveryCost() { return deliveryCost; }
     public void setDeliveryCost(double deliveryCost) { this.deliveryCost = deliveryCost; }
+
+    @Override
+    public String toString() {
+        return "Delivery ID: " + deliveryId + "\n" +
+                "Parcel ID: " + parcelId + "\n" +
+                "Customer ID: " + customerId + "\n" +
+                "Delivery Date: " + deliveryDate + "\n" +
+                "Delivery Status: " + deliveryStatus + "\n" +
+                "Delivery Cost: $" + deliveryCost + "\n" +
+                "-----------------------------";
+    }
+
 }

@@ -1,6 +1,7 @@
 package com.courier.dao;
 
 import com.courier.model.Delivery;
+import com.courier.model.Parcel;
 import com.courier.util.DBConnection;
 
 import java.sql.*;
@@ -56,6 +57,10 @@ public class DeliveryDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        //System.out.println("Fetching delivery history...");
+//        for (Delivery delivery : deliveries) {
+//            System.out.println(delivery);
+//        }
         return deliveries;
     }
 }

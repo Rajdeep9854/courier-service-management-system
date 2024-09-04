@@ -50,6 +50,23 @@ public class ParcelDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+//        // Print all parcels
+//        for (Parcel parcel : parcels) {
+//            System.out.println("Parcel ID: " + parcel.getParcelId());
+//            System.out.println("Sender Name: " + parcel.getSenderName());
+//            System.out.println("Sender Address: " + parcel.getSenderAddress());
+//            System.out.println("Recipient Name: " + parcel.getRecipientName());
+//            System.out.println("Recipient Address: " + parcel.getRecipientAddress());
+//            System.out.println("Weight: " + parcel.getWeight());
+//            System.out.println("Status: " + parcel.getStatus());
+//            System.out.println("-----------------------------");
+//        }
+        // Print all parcels using toString method
+//        for (Parcel parcel : parcels) {
+//            System.out.println(parcel);
+//        }
+
         return parcels;
     }
 
